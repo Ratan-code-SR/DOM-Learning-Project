@@ -1,7 +1,7 @@
 // finding element function
-const getElementID = (elementID)=>{
-const element = document.getElementById(elementID);
-return element;
+const getElementID = (elementID) => {
+    const element = document.getElementById(elementID);
+    return element;
 }
 
 // finding all element
@@ -17,6 +17,7 @@ const grandTotal = getElementID("grand-total");
 const cards = document.querySelectorAll(".add-btn");
 for (const card of cards) {
     card.addEventListener("click", () => {
-        console.log('button is clicked');
+       chartCount.innerText++;
+
     })
 }
